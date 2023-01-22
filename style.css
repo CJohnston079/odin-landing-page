@@ -28,3 +28,9 @@ nav ul {
     display: flex;
     padding: 4rem 6rem;
 }
+
+#section-one h1 {
+    font-size: 3rem;
+    font-weight: bolder;
+    color: #F9FAF8;
+}
