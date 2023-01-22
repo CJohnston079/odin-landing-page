@@ -1,0 +1,30 @@
+/* Natigation  */
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items:  center;
+    padding: 1rem 6rem;
+    background-color: #1f2937;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+/* Section One  */
+
+#section-one {
+    background-color: #1f2937;
+    color: white;
+    display: flex;
+    padding: 4rem 6rem;
+}
