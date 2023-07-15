@@ -39,7 +39,17 @@ body {
 }
 
 h1 {
-    font-size: 1.5rem;
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--cl-foreground);
+}
+
+h3 {
+
 }
 
 header {
@@ -79,7 +89,7 @@ a:hover::after {
 
 /* Section One  */
 
-#section-one {
+#hero {
     padding: 4rem 8rem;
     display: flex;
     justify-content: space-between;
@@ -88,7 +98,7 @@ a:hover::after {
     color: var(--cl-white);
 }
 
-#section-one h1 {
+#section-one h2 {
     font-size: 3rem;
     font-weight: 900;
     color: var(--cl-white);
@@ -132,7 +142,7 @@ a:hover::after {
     gap: 2rem;
 }
 
-figure figcaption {
+figcaption {
     width: 200px;
     text-align: center;
 }
