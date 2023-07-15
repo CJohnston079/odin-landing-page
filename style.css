@@ -48,10 +48,6 @@ h2 {
     color: var(--cl-foreground);
 }
 
-h3 {
-
-}
-
 header {
     padding: 1rem 8rem;
     display: flex;
@@ -61,7 +57,19 @@ header {
     color: var(--cl-white);
 }
 
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav > a:first-of-type {
+    margin-right: auto !important;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
 a {
+    display: inline-block;
     position: relative;
     margin: auto 1rem;
     font-size: 1rem;
@@ -78,7 +86,6 @@ a::after {
     left: 0;
     background-color: var(--cl-white);
     transform: scaleX(0);
-    transform-origin: right;
     transition: transform 400ms;
 }
 
@@ -87,9 +94,7 @@ a:hover::after {
     transition: transform 200ms;
 }
 
-/* Section One  */
-
-#hero {
+section:first-of-type {
     padding: 4rem 8rem;
     display: flex;
     justify-content: space-between;
@@ -97,6 +102,13 @@ a:hover::after {
     background-color: var(--cl-foreground-accent);
     color: var(--cl-white);
 }
+
+.max-width {
+    width: 100%;
+    max-width: 75rem;
+}
+
+/**/
 
 #section-one h2 {
     font-size: 3rem;
