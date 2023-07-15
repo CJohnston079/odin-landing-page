@@ -6,11 +6,18 @@
 }
 
 :root {
-    
+    --cl-background: hsl(0, 0%, 100%);
+    --cl-black: hsl(0, 0%, 0%);
+    --cl-light: hsl(90, 17%, 98%);
+    --cl-dark: hsl(215, 28%, 17%);
+    --cl-accent: hsl(217, 91%, 59%);
+
+    --ff-main: 'Roboto';
+    --ff-fallback: sans-serif;
 }
 
 body {
-    font-family: 'Roboto';
+    font-family: var(--ff-main), var(--ff-fallback);
     font-weight: 300;
 }
 
@@ -21,8 +28,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items:  center;
-    background-color: #1f2937;
-    color: white;
+    background-color: var(--cl-dark);
+    color: var(--cl-background);
 }
 
 header h1 {
@@ -43,14 +50,14 @@ nav ul {
     display: flex;
     justify-content: space-between;
     gap: 2rem;
-    background-color: #1f2937;
-    color: white;
+    background-color: var(--cl-dark);
+    color: var(--cl-background);
 }
 
 #section-one h1 {
     font-size: 3rem;
     font-weight: 900;
-    color: #F9FAF8;
+    color: var(--cl-light);
 }
 
 .section-one-hero {
@@ -65,8 +72,8 @@ nav ul {
     padding: 0.5rem;
     font-weight: bold;
     text-align: center;
-    color: #F9FAF8;
-    background-color: #3882F6;
+    color: var(--cl-light);
+    background-color: var(--cl-accent);
     border-radius: 0.3rem;
 }
 
@@ -96,7 +103,7 @@ figure figcaption {
 }
 
 figure img {
-    border: 0.3rem solid #3882F6;
+    border: 0.3rem solid var(--cl-accent);
     border-radius: 1rem;
     object-fit: cover;
     height: 12rem;
@@ -107,7 +114,7 @@ figure img {
 
 #section-three {
     padding: 8rem 8rem;
-    background-color: #E5E7EB;
+    background-color: var(--cl-light);
 }
 
 #section-three h2 {
@@ -133,8 +140,8 @@ figure img {
     display: flex;
     justify-content: space-between;
     gap: 1rem;
-    background-color: #3882F6;
-    color: white;
+    background-color: var(--cl-accent);
+    color: var(--cl-background);
     border-radius: 0.5rem;
 }
 
@@ -142,7 +149,7 @@ figure img {
     padding: 0.5rem 1rem;
     font-weight: bold;
     text-align: center;
-    color: #F9FAF8;
-    border: 0.2rem solid #F9FAF8;
+    color: var(--cl-light);
+    border: 0.2rem solid var(--cl-light);
     border-radius: 0.3rem;
 }
