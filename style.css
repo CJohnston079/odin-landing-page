@@ -6,19 +6,36 @@
 }
 
 :root {
-    --cl-background: hsl(0, 0%, 100%);
+    --cl-white: hsl(0, 0%, 100%);
     --cl-black: hsl(0, 0%, 0%);
-    --cl-light: hsl(90, 17%, 98%);
-    --cl-dark: hsl(215, 28%, 17%);
-    --cl-accent: hsl(217, 91%, 59%);
+    --cl-light-grey: hsl(0, 0%, 95%);
+    --cl-dark-blue: hsl(215, 28%, 17%);
+    --cl-mid-blue: hsl(217, 91%, 59%);
+
+    --cl-background: var(--cl-white);
+    --cl-foreground: var(--cl-black);
+    --cl-background-accent: var(--cl-light-grey);
+    --cl-foreground-accent: var(--cl-dark-blue);
+    --cl-accent: var(--cl-mid-blue);
 
     --ff-main: 'Roboto';
     --ff-fallback: sans-serif;
 }
 
+@media (prefers-color-scheme: dark) {
+    :root {
+        --cl-background: var(--cl-black);
+        --cl-foreground: var(--cl-white);
+        --cl-background-accent: var(--cl-dark-blue);
+        --cl-foreground-accent: var(--cl-dark-blue);
+        --cl-accent: var(--cl-mid-blue);
+    }
+}
+
 body {
     font-family: var(--ff-main), var(--ff-fallback);
     font-weight: 300;
+    color: var(--cl-foreground);
 }
 
 /* Natigation  */
@@ -28,8 +45,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items:  center;
-    background-color: var(--cl-dark);
-    color: var(--cl-background);
+    background-color: var(--cl-foreground-accent);
+    color: var(--cl-white);
 }
 
 header h1 {
@@ -50,14 +67,14 @@ nav ul {
     display: flex;
     justify-content: space-between;
     gap: 2rem;
-    background-color: var(--cl-dark);
-    color: var(--cl-background);
+    background-color: var(--cl-foreground-accent);
+    color: var(--cl-white);
 }
 
 #section-one h1 {
     font-size: 3rem;
     font-weight: 900;
-    color: var(--cl-light);
+    color: var(--cl-white);
 }
 
 .section-one-hero {
@@ -72,7 +89,7 @@ nav ul {
     padding: 0.5rem;
     font-weight: bold;
     text-align: center;
-    color: var(--cl-light);
+    color: var(--cl-background-accent);
     background-color: var(--cl-accent);
     border-radius: 0.3rem;
 }
@@ -81,6 +98,7 @@ nav ul {
 
 #section-two {
     padding: 4rem 8rem;
+    background-color: var(--cl-background);
 }
 
 #section-two h2 {
@@ -114,7 +132,7 @@ figure img {
 
 #section-three {
     padding: 8rem 8rem;
-    background-color: var(--cl-light);
+    background-color: var(--cl-background-accent);
 }
 
 #section-three h2 {
@@ -132,6 +150,7 @@ figure img {
 
 #section-four {
     padding: 2rem 8rem;
+    background-color: var(--cl-background);
 }
 
 .action {
@@ -149,7 +168,7 @@ figure img {
     padding: 0.5rem 1rem;
     font-weight: bold;
     text-align: center;
-    color: var(--cl-light);
-    border: 0.2rem solid var(--cl-light);
+    color: var(--cl-background-accent);
+    border: 0.2rem solid var(--cl-background-accent);
     border-radius: 0.3rem;
 }
