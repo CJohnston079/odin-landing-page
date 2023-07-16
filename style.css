@@ -140,6 +140,16 @@ a:hover::after {
     transition: transform 200ms;
 }
 
+blockquote {
+    font-size: 2.25rem;
+    font-weight: light;
+    font-style: italic;
+}
+blockquote + figcaption {
+    font-weight: bold;
+    text-align: right;
+}
+
 figure {
     width: 10rem;
 }
@@ -164,6 +174,11 @@ figure .placeholder {
 section:nth-of-type(1) {
     background-color: var(--cl-foreground-accent);
     color: var(--cl-light-text);
+}
+
+section:nth-of-type(3) {
+    background-color: var(--cl-light-text);
+    color: var(--cl-foreground-accent);
 }
 
 .hero-content {
@@ -200,24 +215,6 @@ section:nth-of-type(1) {
     flex-wrap: wrap;
     gap: 4rem;
     margin: 2rem auto;
-}
-
-/* Section three  */
-
-#section-three {
-    padding: 8rem 8rem;
-    background-color: var(--cl-background-accent);
-}
-
-#section-three h2 {
-    font-size: 2rem;
-    font-weight: 300;
-    font-style: italic;
-}
-
-#section-three p {
-    text-align: right;
-    font-weight: 700;
 }
 
 /* Section four */
