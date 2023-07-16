@@ -24,6 +24,13 @@
     --cl-accent: var(--cl-mid-blue);
     --cl-light-accent: var(--cl-light-lime);
 
+    --bg-diagonal-stripes: repeating-linear-gradient(
+        45deg, var(--cl-accent),
+        var(--cl-accent) 0.3rem,
+        transparent 0.3rem,
+        transparent 0.6rem
+    );
+
     --ff-main: 'Roboto';
     --ff-fallback: sans-serif;
 }
@@ -61,7 +68,7 @@ h2 {
 }
 
 header {
-    padding: 1rem 4rem;
+    padding: 1.5rem 4rem 0rem 4rem;
     display: flex;
     justify-content: space-between;
     align-items:  center;
@@ -113,17 +120,29 @@ section:nth-of-type(1) {
     color: var(--cl-light-text);
 }
 
-#hero {
+.hero {
     margin: 2rem 0;
     display: flex;
     justify-content: space-between;
     gap: 2rem;
 }
 
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .max-width-wrapper {
     width: 100%;
-    max-width: 50rem;
+    max-width: 60rem;
     margin: 0 auto;
+}
+
+.placeholder {
+    height: 15rem;
+    width: 100%;
+    background: var(--bg-diagonal-stripes)
 }
 
 /**/
