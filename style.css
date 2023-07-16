@@ -64,6 +64,7 @@ h1 {
 h2 {
     font-size: 2.25rem;
     font-weight: 900;
+    text-align: center;
     color: var(--cl-foreground);
 }
 
@@ -139,6 +140,27 @@ a:hover::after {
     transition: transform 200ms;
 }
 
+figure {
+    width: 10rem;
+}
+
+figcaption {
+    text-align: center;
+}
+
+figure img {
+    border: 0.3rem solid var(--cl-accent);
+    border-radius: 1rem;
+    object-fit: cover;
+    height: 12rem;
+    width: 12rem;
+}
+
+figure .placeholder {
+    width: 10rem;
+    height: 10rem;
+}
+
 section:nth-of-type(1) {
     background-color: var(--cl-foreground-accent);
     color: var(--cl-light-text);
@@ -172,47 +194,12 @@ section:nth-of-type(1) {
     height: 15rem;
 }
 
-figure .placeholder {
-    width: 10rem;
-    height: 10rem;
-}
-
-/**/
-
-#section-one h2 {
-    font-size: 3rem;
-    font-weight: 900;
-    color: var(--cl-white);
-}
-
-.section-one-hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1rem;
-}
-
-/* Section two  */-content
-
 .cards {
-    margin: 2rem auto;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 2rem;
-}
-
-figcaption {
-    width: 200px;
-    text-align: center;
-}
-
-figure img {
-    border: 0.3rem solid var(--cl-accent);
-    border-radius: 1rem;
-    object-fit: cover;
-    height: 12rem;
-    width: 12rem;
+    gap: 4rem;
+    margin: 2rem auto;
 }
 
 /* Section three  */
