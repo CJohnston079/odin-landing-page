@@ -44,6 +44,10 @@ body {
     color: var(--cl-foreground);
 }
 
+section {
+    padding: 4rem;
+}
+
 h1 {
     font-size: 3rem;
     font-weight: 900;
@@ -57,7 +61,7 @@ h2 {
 }
 
 header {
-    padding: 1rem 8rem;
+    padding: 1rem 4rem;
     display: flex;
     justify-content: space-between;
     align-items:  center;
@@ -68,6 +72,7 @@ header {
 nav {
     display: flex;
     justify-content: flex-end;
+    gap: 2rem;
 }
 
 nav > a:first-of-type {
@@ -77,22 +82,22 @@ nav > a:first-of-type {
     color: var(--cl-light-accent);
 }
 
-a {
-    display: inline-block;
+nav a {
     position: relative;
-    margin: auto 1rem;
+    margin: auto 0rem;
     font-size: 1rem;
     text-decoration: none;
-    color: var(--cl-white);
+    color: var(--cl-light-text);
 }
 
-a::after {
+nav a::after {
     content: '';
     display: block;
     width: 100%;
     height: 0.1rem;
     position: absolute;
     left: 0;
+    bottom: -0.2rem;
     background-color: var(--cl-white);
     transform: scaleX(0);
     transition: transform 400ms;
@@ -104,17 +109,21 @@ a:hover::after {
 }
 
 section:nth-of-type(1) {
-    padding: 4rem 8rem;
+    background-color: var(--cl-foreground-accent);
+    color: var(--cl-light-text);
+}
+
+#hero {
+    margin: 2rem 0;
     display: flex;
     justify-content: space-between;
     gap: 2rem;
-    background-color: var(--cl-foreground-accent);
-    color: var(--cl-white);
 }
 
-.max-width {
+.max-width-wrapper {
     width: 100%;
-    max-width: 75rem;
+    max-width: 50rem;
+    margin: 0 auto;
 }
 
 /**/
