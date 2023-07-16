@@ -11,49 +11,59 @@
     </head>
     <body>
         <header>
-            <h1>Header Logo</h1>
-            <nav>
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                </ul>
-            </nav>
+            <div class="max-width-wrapper">
+                <nav>
+                    <a href="">Header Logo</a>
+                    <a href="">Header link 1</a>
+                    <a href="">Header link 2</a>
+                    <a href="">Header link 3</a>
+                </nav>
+            </div>
         </header>
-        <div id="section-one">
-            <div class="section-one-hero">
-                <h1>This website is great</h1>
-                <p>This website has some subtext that goes here under the hero text. It's a smaller font and the colour is lower contrast.</p>
-                <div class="button-header">Sign up</div>
+        <section id="hero">
+            <div class="max-width-wrapper">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>This website is great</h1>
+                        <p>This website has some subtext that goes here under the hero text. It's a smaller font and the colour is lower contrast.</p>
+                        <button>Sign up</button>
+                    </div>
+                    <img class="placeholder">
+                </div>
             </div>
-            <img src="images/vanilla-marshmallows.webp" alt="Vanilla Marshmallows">
-        </div>
-        <div id="section-two">
-            <h2>Some important information.</h2>
-            <div class="cards">
-                <figure>
-                    <img src="images/banana-bread.webp">
-                    <figcaption>This is some subext under an illustration or image</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/homemade-chocolate-fudge.webp">
-                    <figcaption>This is some subext under an illustration or image</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/irish-soda-muffins.webp">
-                    <figcaption>This is some subext under an illustration or image</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/overnight-cinnamon-rolls.webp">
-                    <figcaption>This is some subext under an illustration or image</figcaption>
-                </figure>
+        </section>
+        <section id="information">
+            <div class="max-width-wrapper">
+                <h2>Some important information.</h2>
+                <div class="cards">
+                    <figure>
+                        <img class="placeholder">
+                        <figcaption>This is some subext under an illustration or image</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="placeholder">
+                        <figcaption>This is some subext under an illustration or image</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="placeholder">
+                        <figcaption>This is some subext under an illustration or image</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="placeholder">
+                        <figcaption>This is some subext under an illustration or image</figcaption>
+                    </figure>
+                </div>
             </div>
-        </div>
-        <div id="section-three">
-            <h2>This is an inspiring quote or testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows. All I know is that it looks nice.</h2>
-            <p>-Thor, God of Thunder</p>
-        </div>
-        <div id="section-four">
+        </section>
+        <section id="testimonial">
+            <figure>
+                <blockquote>
+                    <p>This is an inspiring quote or testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows. All I know is that it looks nice.</p>
+                </blockquote>
+                <figcaption>-Thor, God of Thunder</figcaption>
+            </figure>
+        </section>
+        <section id="call-to-action">
             <div class="action">
                 <div>
                     <h3>Call to action! It's time!</h3>
@@ -61,7 +71,7 @@
                 </div>
                 <div class="button-action">Sign up</div>
             </div>
-        </div>
+        </section>
         <footer>
             Copyright Ⓒ The Odin Project 2021
         </footer>
