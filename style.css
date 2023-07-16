@@ -33,7 +33,7 @@
     --ff-fallback: sans-serif;
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
     :root {
         --cl-background: var(--cl-black);
         --cl-foreground: var(--cl-white);
