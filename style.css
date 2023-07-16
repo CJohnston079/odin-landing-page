@@ -5,18 +5,24 @@
     margin: 0px;
 }
 
+
 :root {
     --cl-white: hsl(0, 0%, 100%);
     --cl-black: hsl(0, 0%, 0%);
-    --cl-light-grey: hsl(0, 0%, 95%);
-    --cl-dark-blue: hsl(215, 28%, 17%);
-    --cl-mid-blue: hsl(217, 91%, 59%);
+    --cl-dark-grey-blue: #1f2937;
+    --cl-dark-blue: #1f2937;
+    --cl-mid-blue: #3780f6;
+    --cl-light-blue: #e5e7eb;
+    --cl-light-lime: #f9faf8;
 
     --cl-background: var(--cl-white);
     --cl-foreground: var(--cl-black);
+    --cl-light-text: var(--cl-light-blue);
+    --cl-dark-text: var(--cl-dark-grey-blue);
     --cl-background-accent: var(--cl-light-grey);
     --cl-foreground-accent: var(--cl-dark-blue);
     --cl-accent: var(--cl-mid-blue);
+    --cl-light-accent: var(--cl-light-lime);
 
     --ff-main: 'Roboto';
     --ff-fallback: sans-serif;
@@ -40,10 +46,12 @@ body {
 
 h1 {
     font-size: 3rem;
+    font-weight: 900;
+    color: var(--cl-light-grey);
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 2.25rem;
     font-weight: 900;
     color: var(--cl-foreground);
 }
@@ -54,7 +62,7 @@ header {
     justify-content: space-between;
     align-items:  center;
     background-color: var(--cl-foreground-accent);
-    color: var(--cl-white);
+    color: #1f2937;
 }
 
 nav {
@@ -66,6 +74,7 @@ nav > a:first-of-type {
     margin-right: auto !important;
     font-size: 1.5rem;
     font-weight: bold;
+    color: var(--cl-light-accent);
 }
 
 a {
@@ -94,7 +103,7 @@ a:hover::after {
     transition: transform 200ms;
 }
 
-section:first-of-type {
+section:nth-of-type(1) {
     padding: 4rem 8rem;
     display: flex;
     justify-content: space-between;
